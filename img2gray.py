@@ -27,7 +27,7 @@ def img2Scad(destname, img):
     identifierChars = re.compile('[^a-zA-Z0-9_]')
     name, ext = os.path.splitext(os.path.basename(destname))
     with open(destname, 'w') as dest:
-        dest.write('function levels_%s() =\n' % identifierChars.sub('', name) )
+        dest.write('function levels_{}() =\n'.format(identifierChars.sub('', name)))
         img2LevelsArray(dest,img)
         dest.write(';\n')
 
@@ -58,11 +58,11 @@ def main():
             name, ext = os.path.splitext(args.dest)
             ext = ext.lower()
             if ext==".txt":
-                img2Txt (args.dest, gray_img)
+                img2Txt(args.dest, gray_img)
             elif ext==".scad":
-                img2Scad (args.dest, gray_img)
+                img2Scad(args.dest, gray_img)
             else:
-                print('Unsupported destination file extension: %s' % ext)
+                print('Unsupported destination file extension: {}'.format(ext))
 
         except Exception as err:
             print("ERROR: ", format(err))
