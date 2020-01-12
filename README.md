@@ -18,10 +18,22 @@ Given `caterpillar.jpg` like this:
 ![caterpillar](images/caterpillar.jpg)
 
 Below is the command to generate binary data into `caterpillar.txt`:
-
+```
     > python img2gray caterpillar.jpg caterpillar.txt
+```
 
-`caterpillar.txt` will contain data like this:
+Or you can generate a scad library file `caterpillar.scad`:
+```
+    > python img2gray caterpillar.jpg caterpillar.scad
+```
+
+`caterpillar.scad` can be imported in another scad file:
+``` 
+    use <myimage.scad>
+    data = levels_myimage();
+```
+
+`caterpillar.txt` and `caterpillar.scad` will contain data array like this:
 
 	[
         [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255], 
