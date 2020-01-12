@@ -28,7 +28,7 @@ Or you can generate a scad library file `caterpillar.scad`:
 `caterpillar.scad` can be imported in another scad file:
 
     use <myimage.scad>;
-    data = levels_myimage();
+    data = levels_caterpillar();
 
 `caterpillar.txt` and `caterpillar.scad` will contain data array like this:
 
