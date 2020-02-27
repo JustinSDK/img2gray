@@ -21,16 +21,7 @@ Below is the command to generate gray data into `caterpillar.txt`:
 
     > python img2gray.py caterpillar.jpg caterpillar.txt
 
-Or you can generate a scad library file `caterpillar.scad`:
-
-    > python img2gray.py caterpillar.jpg caterpillar.scad
-
-`caterpillar.scad` can be imported in another scad file:
-
-    use <myimage.scad>;
-    data = levels_caterpillar();
-
-`caterpillar.txt` and `caterpillar.scad` will contain data array like this:
+`caterpillar.txt` will contain data array like this:
 
 	[
         [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255], 
@@ -134,4 +125,13 @@ Or you can generate a scad library file `caterpillar.scad`:
         [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255], 
         [255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255] 
     ]
- 
+
+Or you can generate a scad library file `caterpillar.scad`:
+
+    > python img2gray.py caterpillar.jpg caterpillar.scad
+
+`caterpillar.scad` can be imported in another scad file:
+
+    use <myimage.scad>;
+    data = levels_caterpillar();
+
