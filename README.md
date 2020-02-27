@@ -17,7 +17,7 @@ Given `caterpillar.jpg` like this:
     
 ![caterpillar](images/caterpillar.jpg)
 
-Below is the command to generate binary data into `caterpillar.txt`:
+Below is the command to generate gray data into `caterpillar.txt`:
 
     > python img2gray.py caterpillar.jpg caterpillar.txt
 
