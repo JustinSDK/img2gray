@@ -32,14 +32,13 @@ def img2Scad(destname, img):
         dest.write(';\n')
 
 def img2LevelsArray(dest, img):
-    leng = len(img)
     dest.write('[\n')
-    for r in range(0, leng - 1):
+    for r in range(0, len(img) - 1):
         dest.write('\t')
-        dest.write(str([px for px in img[r]]))
+        dest.write(str(img[r].tolist()))
         dest.write(',\n')
     dest.write('\t')
-    dest.write(str([px for px in img[r]]))
+    dest.write(str(img[-1].tolist()))
     dest.write('\n]')
 
 def main():
